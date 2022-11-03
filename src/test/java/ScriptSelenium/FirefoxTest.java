@@ -1,25 +1,32 @@
 package ScriptSelenium;
-
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
-public class FirefoxTest {
+public class    FirefoxTest {
 
     private WebDriver driver;
+    private Map<String, Object> vars;
     JavascriptExecutor js;
-    @Before
+    @BeforeTest
     public void setUp() throws MalformedURLException {
         FirefoxOptions firefoxoptions = new FirefoxOptions();
         driver = new RemoteWebDriver(new URL("http://localhost:4444/"), firefoxoptions);
         js = (JavascriptExecutor) driver;
+        vars = new HashMap<String, Object>();
+
     }
-    @After
+    @AfterTest
     public void TearDown(){
         driver.quit();
     }

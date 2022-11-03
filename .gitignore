@@ -36,6 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
+/allure-results
 ./.idea/workspace.xml
 /.idea/workspace.xml
+.idea/workspace.xml

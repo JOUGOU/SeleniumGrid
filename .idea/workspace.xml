@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c96415e-8d02-4a43-8b3e-64cd9ceaf3e8" name="Changes" comment="Modify pom.xml and add my first script Firefox">
+    <list default="true" id="7c96415e-8d02-4a43-8b3e-64cd9ceaf3e8" name="Changes" comment="Pom.xml add &quot;workspace.xml&quot;">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ScriptSelenium/FirefoxTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +43,85 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.Firefox">
+    <configuration name="FirefoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutoScript" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ScriptSelenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ScriptSelenium" />
+      <option name="MAIN_CLASS_NAME" value="ScriptSelenium.FirefoxTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Firefox" type="TestNG">
+      <module name="AutoScript" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ScriptSelenium" />
+      <option name="MAIN_CLASS_NAME" value="ScriptSelenium.FirefoxTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile builder" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="maven3.8.1-openjdk-11-slim_builder" />
+          <option name="buildCliOptions" value="--target builder" />
+          <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.Dockerfile builder" />
+      <item itemvalue="JUnit.FirefoxTest" />
+      <item itemvalue="TestNG.Firefox" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.Dockerfile builder" />
+        <item itemvalue="JUnit.FirefoxTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,7 +130,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666899887922</updated>
-      <workItem from="1666899889247" duration="3390000" />
+      <workItem from="1666899889247" duration="9185000" />
+      <workItem from="1666968070020" duration="2792000" />
+      <workItem from="1667132318333" duration="601000" />
+      <workItem from="1667138822295" duration="755000" />
+      <workItem from="1667462282695" duration="9749000" />
     </task>
     <task id="LOCAL-00001" summary="Modify pom.xml and add my first script Firefox">
       <created>1666903582256</created>
@@ -60,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666903582256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Pom.xml add &quot;workspace.xml&quot;">
+      <created>1666940471150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666940471150</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modify pom.xml and add my first script Firefox" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify pom.xml and add my first script Firefox" />
+    <MESSAGE value="Pom.xml add &quot;workspace.xml&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pom.xml add &quot;workspace.xml&quot;" />
   </component>
 </project>
